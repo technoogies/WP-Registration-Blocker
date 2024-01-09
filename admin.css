@@ -53,9 +53,9 @@ textarea#regblocker_blocked_strings {
 }
 
 .wrap-blocker .button-primary {
-	background-color	: #8a2be2; /* Your desired background color */
-	border-color		: #8a2be2; /* Your desired border color */
-	color				: #FFFFFF; /* Your desired text color */
+	background-color	: #8a2be2; /* background color */
+	border-color		: #8a2be2; /* border color */
+	color				: #FFFFFF; /* text color */
 }
 
 /* You may want to add :hover styles for better interaction feedback */
