@@ -4,7 +4,7 @@
 * Plugin URI: https://truthemes.com/wp-registration-blocker/
 * Description: Blocks certain usernames or email domains from user registration using wildcards like *, ?, and #.
 * Version: 1.1.02
-* Author: Cory L Curtis via AI assist
+* Author: Cory L Curtis
 * Author URI: https://truthemes.com/
 * License: GPL-2.0+
 * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -75,7 +75,7 @@ function regblocker_settings_page() {
     echo '</form>';
 	
 	echo '<div class="truthemes-div">';
-	echo '<p class="truthemes-p"><b>Copyright © 2023 - <a class="noogies" href="https://technoogies.com" target="blank" rel="noopener">Technoogies, LLC</a> - Crafted By <a class="truthemes-a" href="https://truthemes.com" target="_blank" rel="noopener">TruThemes.com</a></b></p>';
+	echo '<p class="truthemes-p"><b>Copyright © 2024 - <a class="noogies" href="https://technoogies.com" target="blank" rel="noopener">Technoogies, LLC</a> - Crafted By <a class="truthemes-a" href="https://truthemes.com" target="_blank" rel="noopener">TruThemes.com</a></b></p>';
     echo '</div>';
 }
 
