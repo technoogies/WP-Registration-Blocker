@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Registration Blocker with Wildcards
 * Plugin URI: https://truthemes.com/wp-registration-blocker/
-* Description: Blocks certain usernames or email domains from user registration using wildcards like *, ?, and #.
+* Description: Blocks certain usernames or email domains from user registration using * as a wildcard, ? fo any single character, and # for any single integer.
 * Version: 1.1.02
 * Author: Cory L Curtis
 * Author URI: https://truthemes.com/
