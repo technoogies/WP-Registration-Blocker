@@ -1,13 +1,13 @@
 <?php
 /**
-* Plugin Name: Registration Blocker with Wildcards
-* Plugin URI: https://truthemes.com/wp-registration-blocker/
-* Description: Blocks certain usernames or email domains from user registration using * as a wildcard, ? fo any single character, and # for any single integer.
-* Version: 1.1.02
-* Author: Cory L Curtis
-* Author URI: https://truthemes.com/
-* License: GPL-2.0+
-* License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+* 	Plugin Name: Registration Blocker with Wildcards
+* 	Plugin URI: https://truthemes.com/wp-registration-blocker/
+* 	Description: Blocks certain usernames or email domains from user registration using wildcards like *, ?, and #.
+* 	Version: 1.1.04
+* 	Author: Cory L Curtis
+* 	Author URI: https://truthemes.com/
+* 	License: GPL-2.0+
+* 	License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
 defined('ABSPATH') or die('No script kiddies please!');
@@ -75,7 +75,7 @@ function regblocker_settings_page() {
     echo '</form>';
 	
 	echo '<div class="truthemes-div">';
-	echo '<p class="truthemes-p"><b>Copyright © 2024 - <a class="noogies" href="https://technoogies.com" target="blank" rel="noopener">Technoogies, LLC</a> - Crafted By <a class="truthemes-a" href="https://truthemes.com" target="_blank" rel="noopener">TruThemes.com</a></b></p>';
+	echo '<p class="truthemes-p"><b>Copyright © ' . date('Y') . ' &bull; <a class="noogies-a" href="https://technoogies.com" target="_blank" rel="noopener">Technoogies, LLC</a> &mdash; Crafted By <a class="truthemes-a" href="https://truthemes.com" target="_blank" rel="noopener">TruThemes.com</a></b></p>';
     echo '</div>';
 }
 
@@ -97,7 +97,7 @@ function regblocker_validate_registration($errors, $sanitized_user_login, $user_
 
     foreach ($blocked_strings as $string) {
         if (regblocker_string_matches($sanitized_user_login, $string) || regblocker_string_matches($user_email, $string)) {
-            $errors->add('regblocker_error', __('<strong>ERROR</strong>: This username or email is not allowed due to our policy.', 'regblocker'));
+            $errors->add('regblocker_error', __('<strong>ERROR</strong>: This username or email is in violation of our user policy.', 'regblocker'));
             break;
         }
     }
