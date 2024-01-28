@@ -1,3 +1,11 @@
+/* -[ Reg Blocker - CSS for the plugin Admin area ]-
+* 	Version: 1.1.04
+* 	Author: Cory L Curtis
+* 	Plugin URI: https://truthemes.com/wp-registration-blocker/
+* 	Author URI: https://truthemes.com/
+* 	License: GPL-2.0+
+* 	License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+*/
 
 @media screen and (max-width: 520px) {
 	.wrap-blocker {
@@ -10,17 +18,17 @@
 		height				:200px;
 	}
 	.wrap-blocker h1 {
-		font-size	: 200%;
+		font-size	: 2rem;
 	}
 	.wrap-blocker p {
-		font-size	: 120%;
+		font-size	: 1.2rem;
 	}
 	.truthemes-div {
 		/**/
 		position	: absolute;
 		bottom		: 0px!important;
 		left		: 10px!important;
-		font-size	: 90%;
+		font-size	: .9rem;
 	}
 
 }
@@ -53,9 +61,9 @@ textarea#regblocker_blocked_strings {
 }
 
 .wrap-blocker .button-primary {
-	background-color	: #8a2be2; /* background color */
-	border-color		: #8a2be2; /* border color */
-	color				: #FFFFFF; /* text color */
+	background-color	: #8a2be2; /* Button background color */
+	border-color		: #8a2be2; /* Button border color */
+	color				: #FFFFFF; /* Button text color */
 }
 
 /* You may want to add :hover styles for better interaction feedback */
@@ -89,11 +97,11 @@ textarea#regblocker_blocked_strings {
 	left		: 0px;
 }
 
-a.noogies {
+a.noogies-a {
 	/**/
 	color	: #2D6582;
 }
-a.noogies:hover {
+a.noogies-a:hover {
 	/**/
 	color	: #FF6100;
 }
