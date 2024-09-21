@@ -1,34 +1,24 @@
-/* -[ Reg Blocker - CSS for the plugin Admin area ]-
-* 	Version: 1.1.05
-* 	Author: Cory L Curtis
-* 	Plugin URI: https://truthemes.com/wp-registration-blocker/
-* 	Author URI: https://truthemes.com/
-* 	License: GPL-2.0+
-* 	License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-*/
+/* -[ CSS for Registration Blocker Plugin Ver. 1.2.2, CLC 2024-09-20 ]- */
 
-@media screen and (max-width: 520px) {
-	.wrap-blocker {
-		width 	: auto;
-		margin	: 5px 0 0 !important;
-		padding	: 10px!important;
+@media screen and (max-width: 768px) {
+	.wrap-blocker.wrap-blocker {
+		width 		: fit-content;
+		width		: -moz-fit-content;
+		margin		: .5em 0 0;
+		padding		: 1em;
 	}
-	textarea#regblocker_blocked_strings {
-		max-width			:96%;
-		height				:200px;
+	.wrap-blocker.wrap-blocker textarea#regblocker_blocked_strings {
+		width 		: fit-content;
+		width		: -moz-fit-content;
+		min-width	: 20em;
+		height		: 20em;
 	}
-	.wrap-blocker h1 {
-		font-size	: 2rem;
+	.wrap-blocker.wrap-blocker h1 {
+		font-size	: 2.2rem;
+		line-height	:  2em;
 	}
-	.wrap-blocker p {
+	.wrap-blocker.wrap-blocker p {
 		font-size	: 1.2rem;
-	}
-	.truthemes-div {
-		/**/
-		position	: absolute;
-		bottom		: 0px!important;
-		left		: 10px!important;
-		font-size	: .9rem;
 	}
 
 }
@@ -39,76 +29,83 @@ body {
 
 .wrap-blocker {
 	height			: 100%;
-	max-width		: 750px;
-	background-color: #fff;
-	margin			: 20px;
-	padding			: 20px;
-	border-radius	: 5px;
+	max-width		: 50em;
+	background-color: #ffffff;
+	border-radius	: .5em;
 }
 
 .wrap-blocker h1, .wrap-blocker p {
 	color: #6913b4; /* Text color of Title and Instructions */
 }
+.wrap-blocker h1 {
+	font-size	: 2rem;
+	line-height	:  1.2em;
+}
+.wrap-blocker p {
+	font-size	: 1.1rem;
+}
 
 textarea#regblocker_blocked_strings {
 	background-color	: #f2fff0;
 	border				: 1px solid #8a2be2;
-	border-radius		: 5px;
-	width				: 400px;
-	min-width			: 200px;
-	height				: 300px;
+	border-radius		: .5em;
+	width				: 40em;
+	height				: 30em;
 	resize				: vertical;
 }
 
-.wrap-blocker .button-primary {
+.wrap-blocker .button-primary.button-primary {
 	background-color	: #8a2be2; /* Button background color */
 	border-color		: #8a2be2; /* Button border color */
 	color				: #FFFFFF; /* Button text color */
 }
 
-/* You may want to add :hover styles for better interaction feedback */
-.wrapblocker .button-primary:hover {
+.wrapblocker .button-primary.button-primary:hover {
 	background-color	: #7f20d2; /* Slightly darker for hover effect */
 	border-color		: #7f20d2;
 }
 
-.wp-core-ui .button-primary {
+.wp-core-ui .button-primary.button-primary {
 	border          : none;
-	border-radius   : 5px;
-	padding         : 5px 20px;
+	border-radius   : .5em;
+	padding         : .3em 1em;
 	cursor          : pointer;
 	font-weight     : bold;
-	font-size		: 15px;
+	font-size		: 1.2rem;
 }
 
 .regblocker_error{
 	background		: red;
 	color			: white;
-	padding			: 15px;
-	border-radius	: 5px;
+	padding			: 1.5em;
+	border-radius	: .5em;
 	display			: block;
-	margin			: 10px 0;
+	margin			: 1em 0;
+}
+.reg-form-message {
+	padding		: 0 .5em;
+	color		: #6913b4;
 }
 
 .truthemes-div {
 	/**/
-	position	: absolute;
-	bottom		: 15px;
-	left		: 0px;
+	position	: relative;
+	bottom		: 0;
+	left		: 0;
 }
 
-a.noogies-a {
+a.noogies {
 	/**/
-	color	: #2D6582;
+	color		: #2D6582;
 }
-a.noogies-a:hover {
+a.noogies:hover {
 	/**/
-	color	: #FF6100;
+	color		: #FF6100;
 }
 
 a.truthemes-a {
-	color	: #644CFF;
+	color		: #644CFF;
 }
 a.truthemes-a:hover {
-	color	: #f351ff;
+	color		: #f351ff;
 }
